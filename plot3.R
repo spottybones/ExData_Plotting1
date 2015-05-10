@@ -1,5 +1,5 @@
 # plot3.R
-# generate a PNG file containing a plot of the three sub-meetering observations
+# generate a PNG file containing a plot of the three sub-metering observations
 # vs. time from the supplied household power consumption database for 2/1/2007 -
 # 2/2/2007
 
