@@ -33,7 +33,7 @@ plot_data$datetime <- strptime(paste(plot_data$Date, plot_data$Time),
                                 "%d/%m/%Y %H:%M:%S")
 
 # open a PNG file to receive the plot
-png(file="plot4.png", width=504, height=504, res=96)
+png(file="plot4.png", width=480, height=480)
 
 # set up grid to hold the four individual plots
 par(mfrow = c(2, 2))

@@ -26,7 +26,7 @@ full_data <- read.delim(LOCAL_DATA, sep=";", na.strings=c("?"), as.is = c(1, 2))
 plot_data <- full_data[full_data$Date == '1/2/2007' | full_data$Date == '2/2/2007',]
 
 # open a PNG file to receive the plot
-png(file="plot1.png", width=504, height=504, res=96)
+png(file="plot1.png", width=480, height=480)
 
 # generate the plog and close the file
 par(cex=0.8)

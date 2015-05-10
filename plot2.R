@@ -30,7 +30,7 @@ plot_data$Timestamp <- strptime(paste(plot_data$Date, plot_data$Time),
                                 "%d/%m/%Y %H:%M:%S")
 
 # open a PNG file to receive the plot
-png(file="plot2.png", width=504, height=504, res=96)
+png(file="plot2.png", width=480, height=480)
 par(cex=0.75)
 with(plot_data, plot(Timestamp, Global_active_power,
                      type="l",
