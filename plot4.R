@@ -39,7 +39,7 @@ png(file="plot4.png", width=480, height=480)
 par(mfrow = c(2, 2))
 
 # generate the plot
-par(cex=0.6)
+par(cex=0.8)
 
 # generate the plots
 with(plot_data, {
