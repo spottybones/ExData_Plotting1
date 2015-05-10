@@ -30,7 +30,9 @@ plot_data$Timestamp <- strptime(paste(plot_data$Date, plot_data$Time),
                                 "%d/%m/%Y %H:%M:%S")
 
 # open a PNG file to receive the plot
-# png(file="plot2.png", width=504, height=504, res=96)
+png(file="plot3.png", width=504, height=504, res=96)
+
+# generate the plot
 par(cex=0.75)
 with(plot_data, plot(Timestamp, Sub_metering_1, type="l", xlab="",
                      ylab="Energy sub metering"))
@@ -38,5 +40,6 @@ with(plot_data, lines(Timestamp, Sub_metering_2, col="red"))
 with(plot_data, lines(Timestamp, Sub_metering_3, col="blue"))
 legend("topright", lty=1, col=c("black", "red", "blue"),
        legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
-# dev.off()
+
+dev.off()
 
