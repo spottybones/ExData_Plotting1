@@ -25,7 +25,10 @@ plot_data <- full_data[full_data$Date == '1/2/2007' | full_data$Date == '2/2/200
 png(file="plot1.png", width=504, height=504, res=96)
 
 # generate the plog and close the file
-hist(plot_data$Global_active_power, col="red", main="Global Active Power",
-     xlab="Global Active Power (kilowatts)")
+par(cex=0.8)
+hist(plot_data$Global_active_power, col="red",
+     main="Global Active Power",
+     xlab="Global Active Power (kilowatts)"
+     )
 dev.off()
 
