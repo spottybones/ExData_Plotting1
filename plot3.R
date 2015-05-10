@@ -33,7 +33,7 @@ plot_data$Timestamp <- strptime(paste(plot_data$Date, plot_data$Time),
 png(file="plot3.png", width=480, height=480)
 
 # generate the plot
-par(cex=0.75)
+par(cex=0.9)
 with(plot_data, plot(Timestamp, Sub_metering_1, type="l", xlab="",
                      ylab="Energy sub metering"))
 with(plot_data, lines(Timestamp, Sub_metering_2, col="red"))
