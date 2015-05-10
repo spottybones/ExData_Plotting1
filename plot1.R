@@ -3,6 +3,10 @@
 # of Global Active Power observations from the supplied household power consumption
 # database for 2/1/2007 - 2/2/2007
 
+# ensure required libraries are loaded
+library(graphics)
+library(grDevices)
+
 # set constants for data
 DATA_URL <- "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip"
 LOCAL_ZIP <- "./data/household_power_consumption.zip"
