@@ -14,5 +14,6 @@ unzip(LOCAL_ZIP, exdir="./data")
 full_data <- read.delim(LOCAL_DATA, sep=";", na.strings=c("?"), as.is = c(1, 2))
 
 # subset the data for the dates we want to plot
+plot_data <- full_data[full_data$Date == '1/2/2007' | full_data$Date == '2/2/2007',]
 
 # generate the plot
